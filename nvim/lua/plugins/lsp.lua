@@ -12,7 +12,11 @@ return {
         version = "1.*",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "gopls" }
+                ensure_installed = {
+                    "gopls",
+                    "pyright",
+                    "terraform-ls",
+                }
             })
         end
     },
